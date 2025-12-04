@@ -277,10 +277,10 @@
     // Tente abrir mail client
     const subject = encodeURIComponent('Contato via Portfolio: ' + nome);
     const body = encodeURIComponent(mensagem + '\n\n' + 'De: ' + nome + ' - ' + email);
-    const mailto = `mailto:lohan.almeida@email.com?subject=${subject}&body=${body}`;
+    const mailto = `mailto:almeida.lohandev@gmail.com?subject=${subject}&body=${body}`;
     // tenta abrir mailto
     window.location.href = mailto;
-    alertEl.innerHTML = '<div class="alert alert-success">Mensagem preparada no seu cliente de e‑mail. Verifique e envie — ou copie e cole manualmente.</div>';
+    alertEl.innerHTML = '<div class="alert alert-success">Mensagem preparada no seu cliente de e‑mail.</div>';
     setTimeout(()=>{alertEl.innerHTML='';document.getElementById('contactForm').reset();},5000);
   }
 </script>
